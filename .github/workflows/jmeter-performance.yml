@@ -34,7 +34,7 @@ jobs:
           github.event_name == 'schedule'     && '["baseline","load_medium","load_peak","stress","endurance"]' ||
           github.event.inputs.test_type == 'all' && '["baseline","load_medium","load_peak","stress","endurance"]' ||
           format('["{0}"]', github.event.inputs.test_type || 'baseline')
-        ) }}
+         ) }}
 
     steps:
 
